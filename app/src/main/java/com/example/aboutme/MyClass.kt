@@ -1,4 +1,4 @@
 package com.example.aboutme
 
-class MyClass {
+class MyClass (var name: String = "" , var nickname: String = ""){
 }

@@ -4,6 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--Creating a data block-->
+    <data>
+        <variable
+            name="myName"
+            type="com.example.aboutme.MyClass" />
+    </data>
+
     <LinearLayout
 
         android:layout_width="match_parent"
@@ -18,7 +25,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto"
             android:paddingTop="@dimen/padTop"
-            android:text="@string/pinto"
+            android:text="@={myName.name}"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="@dimen/name_size" />
@@ -47,6 +54,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:textSize="20sp"
+            android:text="@={myName.nickname}"
             android:textStyle="bold"
             android:visibility="gone" />
 
